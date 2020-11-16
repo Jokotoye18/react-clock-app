@@ -1,0 +1,105 @@
+/* Nunito font */
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+
+/* Global style */
+*,
+*::before,
+*::after{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    border: none;
+}
+:root{
+    --color-dark: '#000';
+    --color-light: '#fff';
+}
+
+html{ 
+    font-size: 9px;
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth;
+    transition: font-size .2s linear;
+}
+body {
+    /* height: 100vh; */
+    /* background: linear-gradient(#111020, #143637) no-repeat center; */
+    font-family: 'Nunito', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+      'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+      sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    scroll-behavior: smooth;
+}
+
+img{
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+}
+a{
+    text-decoration: none;
+}
+p{
+    font-size: 1.6em;
+}
+.container{
+    width: 90%;
+    max-width: 80rem;
+    margin: 0 auto;
+}
+
+
+/* requesting and error */
+
+.req, .error{
+    background: url("./images//related-info.jpg") center no-repeat;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.req-message-box, .error-message-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80vw;
+    height: 50vh;
+    background-color: #241e1b;
+    padding: 2em;
+}
+.error-message-box{
+    background-color: rgb(29, 12, 12);
+}
+.permission-text{
+    text-align: center;
+    color: sienna;
+}
+/*  */
+
+
+/* @media screen and (max-width: 460px) {
+    html{
+        font-size: 9px;
+    }
+} */
+@media screen and (min-width: 576px) {
+    html{
+        font-size: 10px;
+    }
+}
+@media screen and (min-width: 768px) {
+    html{
+        font-size: 11px;
+    }
+}
+@media screen and (min-width: 992px) {
+    html{
+        font-size: 12px;
+    }
+}
+
+
+
